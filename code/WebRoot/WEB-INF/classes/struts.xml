@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+
+	<constant name="struts.enable.DynamicMethodInvocation" value="false" />
+	<constant name="struts.devMode" value="true" />
+	<package name="default" namespace="/" extends="struts-default">
+		<!-- user login action -->
+		<action name="login" class="zdg.action.UserLoginAction" method="findUser">
+			<result name="success">/index.jsp</result>
+			<result name="error">/login.jsp</result>
+		</action>
+		
+		<!-- user 部分Action -->
+		<!-- user reg action -->
+		<action name="userReg" class="zdg.action.UserAction" method="userReg">
+			<result name="success">/login.jsp</result>
+			<result name="error">/reg.jsp</result>
+			<result name="input">/exeption.jsp</result>
+		</action>
+		<!-- show user message -->
+		<action name="showDetial" class="zdg.action.UserAction" method="showUserDetial">
+			<result name="success">/mycount.jsp</result>
+			<result name="error">/index.jsp</result>
+		</action>
+		
+		<!-- admin 部分action -->
+		<!-- admin login -->
+		<action name="adminLogin" class="zdg.action.AdminAction" method="login">
+			<result name="success">/backManagement.jsp</result>
+			<result name="error">/adminLogin.jsp</result>
+		</action>
+		
+		
+		
+		<!-- goods 部分Action -->
+		<!-- puton goods -->
+		<action name="putOn" class="zdg.action.GoodsAction" method="putOn">
+			<result name="success">/index.jsp</result>
+			<result name="error">/puton.jsp</result>
+		</action>
+		<!-- get all goods -->
+		<action name="getAllGoods" class="zdg.action.GoodsAction" method="getAllGoods">
+			<result name="success">/goodslist.jsp</result>
+			<result name="error">/index.jsp</result>
+			<result name="backAdmin">/backManagement.jsp</result>
+		</action>
+		<!-- one goods detail -->
+		<action name="goodsDetail" class="zdg.action.GoodsAction" method="goodsDetail">
+			<result name="success">/single-product.jsp</result>
+			<result name="error">/goodslist.jsp</result>
+		</action>
+		<!-- delete goods  -->
+		<action name="deleteGoods" class="zdg.action.GoodsAction" method="deleteGoods">
+			<result name="success">/backManagement.jsp</result>
+			<result name="error">/backManagement.jsp</result>
+		</action>
+		<!-- ajax 刷新当前价格 -->
+		<action name="updateInTime" class="zdg.action.GoodsAction" method="updateInTime">
+			<result name="success">/single-product.jsp</result>
+			<result name="error">/goodslist.jsp</result>
+		</action>
+		<!-- 用户出价 -->
+		<action name="offerPrice" class="zdg.action.GoodsAction" method="offerPrice">
+			<result name="success">/single-product.jsp</result>
+			<result name="error">/single-product.jsp</result>
+		</action>
+		<!-- 用户结算 -->
+		<action name="checkout" class="zdg.action.GoodsAction" method="checkout">
+			<result name="success">/index.jsp</result>
+			<result name="error">/checkout.jsp</result>
+		</action>
+		
+	
+
+	</package>
+</struts>

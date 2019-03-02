@@ -1,0 +1,134 @@
+/*
+ *
+ * Template Name: Produkta
+ * Template URI: http://azmind.com
+ * Description: Produkta - Responsive Product Showcase
+ * Author: Anli Zaimi
+ * Author URI: http://azmind.com
+ *
+ */
+
+
+
+
+
+
+
+/***** Product Showcase *****/
+
+.product-showcase {
+    margin: 0 auto;
+    background: #2d2d2d;
+}
+
+.product-showcase-pattern {
+    margin: 0 auto;
+    background-image: url(../img/pattern-2.png);
+    -moz-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
+    -webkit-box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
+    box-shadow: 0 1px 5px 0 rgba(0,0,0,.3) inset;
+}
+
+.product-background {
+    margin-top: 80px;
+    padding-bottom: 40px;
+    background: #2d2d2d; /* browsers that don't support rgba */
+    background: rgba(45,45,45,.7);
+    -moz-border-radius-topleft: 8px;
+    -moz-border-radius-topright: 8px;
+    -webkit-border-top-left-radius: 8px;
+    -webkit-border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.product-title {
+    margin: 25px 0 0 0;
+}
+
+.product-title h1 {
+    padding-right: 40px;
+    font-size: 48px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 58px;
+    text-shadow: 0 1px 7px rgba(0,0,0,.2);
+}
+
+.product-title div.product-description {
+    margin-top: 20px;
+    padding-right: 40px;
+    color: #fff;
+    line-height: 30px;
+    text-shadow: 0 1px 7px rgba(0,0,0,.2);
+}
+
+.product-title div.product-description h3 {
+    margin-top: 25px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+a.buy-it-now {
+    display: inline-block;
+    padding: 15px 55px 12px 45px;
+    margin-top: 20px;
+    background: #518d8a;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    border: 1px solid #73a3a1;
+    -moz-box-shadow:
+        0 25px 35px 0 rgba(255,255,255,.15) inset,
+        0 1px 5px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 25px 35px 0 rgba(255,255,255,.15) inset,
+        0 1px 5px 0 rgba(0,0,0,.2);
+    box-shadow:
+        0 25px 35px 0 rgba(255,255,255,.15) inset,
+        0 1px 5px 0 rgba(0,0,0,.2);
+    color: #fff;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 1px rgba(0,0,0,.3);
+    -o-transition: all .2s;
+    -moz-transition: all .2s;
+    -webkit-transition: all .2s;
+    -ms-transition: all .2s;
+}
+
+a.buy-it-now i { padding-right: 10px; font-size: 28px; vertical-align: middle; }
+
+a.buy-it-now:hover {
+    color: #fff;
+    -moz-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.1) inset,
+        0 1px 5px 0 rgba(0,0,0,.2);
+    -webkit-box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.1) inset,
+        0 1px 5px 0 rgba(0,0,0,.2);
+    box-shadow:
+        0 15px 30px 0 rgba(255,255,255,.1) inset,
+        0 1px 5px 0 rgba(0,0,0,.2);
+}
+
+a.buy-it-now:active {
+    -moz-box-shadow:
+        0 5px 8px 0 rgba(0,0,0,.1) inset,
+        0 1px 4px 0 rgba(0,0,0,.1);
+    -webkit-box-shadow:
+        0 5px 8px 0 rgba(0,0,0,.1) inset,
+        0 1px 4px 0 rgba(0,0,0,.1);
+    box-shadow:        
+        0 5px 8px 0 rgba(0,0,0,.1) inset,
+        0 1px 4px 0 rgba(0,0,0,.1);
+    border: 0;
+}
+
+.product-image {
+    margin-top: 55px;
+    text-align: center;
+}
+
+
